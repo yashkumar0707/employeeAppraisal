@@ -1,4 +1,4 @@
-# FluxGen
+# Employee Appraisal Application
 #### This application is built using angularjs and node.
 ## Frontend
 ### Run the index.html on a live server
