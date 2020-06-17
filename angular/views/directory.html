@@ -1,0 +1,33 @@
+<div style="background-color:white;height:50px; display:inline-block; width:100%">
+  <h2 style="text-align: center; color:black;" id="top">
+    List of employees
+  </h2>
+</div>
+<div class="content">
+
+  <div>
+    <input type="text" ng-model="search" placeholder="Search" style="text-align:center; width:20%" />
+  </div>
+  <div>
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Department</th>
+          <th>Designation</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="ninja in ninjas | filter:search " ng-click="detailedNinja(ninja)">
+          <td>{{ninja.name}}</td>
+          <td>{{ninja.salary}}</td>
+          <td>{{ninja.department}}</td>
+          <td>{{ninja.designation}}</td>
+          <td>{{ninja.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
